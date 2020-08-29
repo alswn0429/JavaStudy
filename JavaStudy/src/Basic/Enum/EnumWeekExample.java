@@ -43,7 +43,7 @@ public class EnumWeekExample {
 		if (today == Week.SUNDAY) {
 			System.out.println("놀쟈!");
 		} else {
-			System.out.println("더 재밌게 놀쟈!");
+			System.out.println("또 놀쟈!");
 		}
 	}
 }
