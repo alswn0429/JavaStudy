@@ -1,0 +1,38 @@
+열거객체의 메서드들
+
+1. name()
+	열거 객체가 가지고 있는 문자열을 리턴
+	ex) Week today = Week.SUNDAY;
+		String name = today.name();
+		여기서 name()메서드는 열거 객체 내부의 문자열인 "SUNDAY"를 리턴
+		name변수에 SUNDAY저장
+
+2. ordinal()
+	전체 열거 객체 중 몇 번째 열거 객체인지 알려줌
+	ex) Week today = Week.SUNDAY;
+		int ordinal = today.ordinal();
+	열거타입 Week에서 SUNDAY는 6번째!
+	따라서 ordinal()은 6을 리턴함
+
+3. compareTo()
+	매개값으로 주어진 열거 객체를 기준으로 몇 번째에 위치하는지 비교
+	만약 열거 객체가 매가값의 열거 객체보다 빠르면 음수, 느리면 양수 리턴
+	ex) Week day1 = Week.MONDAY;
+		Week day2 = Week.WEDNESDAY;
+		int result1 = day1.compareTo(day2);		//-2
+		int result2 = day2.compatrTo(day1);		//2
+		day1과 day2의 위치를 비교!
+
+4. valueOf()
+	매개값으로 주어지는 문자열과 동일한 문자열을 가지는 열거 객체 리턴
+	외부로부터 문자열을 입력받아 열거 객체로 변환할 때 유용함!
+	ex) Week weekDay = Week.valueOf("SATURDAY");
+		weekDay는 Week.SATURDAY 열거 객체를 참조하게 됨!
+
+5.values()
+	열거 타입의 모든 열거 객체들을 배열로 만들어 리턴
+	ex) Week[] days = Week.values();
+		for(Week day:days) {
+			System.out.println(day);
+		} 
+	
