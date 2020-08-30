@@ -1,4 +1,4 @@
- ```java
+
 package ObjectOrientedProgramming.FieldExample;
 
 /*
@@ -21,4 +21,3 @@ public class Korean {
 		this.age = age;
 	}
 }
- ```
