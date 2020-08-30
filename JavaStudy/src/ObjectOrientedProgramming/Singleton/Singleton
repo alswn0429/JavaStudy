@@ -1,0 +1,21 @@
+싱글톤
+	단 하나의 객체만 만들어야 해!	
+	클래스 외부에서 new연산자로 생성자 호출 못하게 막아야함
+	=>private접근 제한자!
+	
+	싱글톤 코드
+	public class 클래스 {
+		//정적 필드
+		private static 클래스 singleton = new 클래스();
+		
+		//생성자
+		private 클래스() { }
+		
+		//정적 메서드
+		static 클래스 getInstance() {
+			return singleton;
+		}
+	}
+	
+	getInstance() : 외부에서 객체를 얻는 방법
+					단 하나의 객체만 리턴
